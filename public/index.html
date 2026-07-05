@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Yaadein - Baatein with Dadu</h1>
+    <img src="grandfather_face.jpg" width="300">
+    <br>
+    <!-- Use standard HTML5 to access the camera -->
+    <video id="video" width="320" height="240" autoplay></video>
+    <script>
+        navigator.mediaDevices.getUserMedia({ video: true })
+        .then(stream => { document.getElementById('video').srcObject = stream; });
+    </script>
+</body>
+</html>
